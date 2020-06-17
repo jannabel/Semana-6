@@ -5,21 +5,28 @@ public class Ejercicio_2
     public Ejercicio_2()
     {
         /* 2. Crear una aplicacion que le pida al usuario un numero positivo y 
-                                el sistema identifique si es primo o no.*/
+                               el sistema identifique si es primo o no.*/
 
         Console.Write("\n ~ Ingrese un numero: ");
         int numero = Convert.ToInt32(Console.ReadLine());
+        int cont = 0;
 
-        if (numero > 0)
+        for (int i = 1; i < (numero + 1); i++)
         {
-            if (numero % 2 != 0 || numero == 2) Console.WriteLine("\n ~ El numero es primo ~ ");
-            else Console.WriteLine("\n ~ El numero no es primo ~ ");
+            if (numero % i == 0)
+            {
+                cont++;
+            }
+        }
+        if (cont != 2)
+        {
+            Console.WriteLine(" ~ El numero no es primo");
         }
         else
         {
-            Console.WriteLine("\n ~ El  numero ingresado es negativo ~ ");
+            Console.WriteLine(" ~ El numero es primo");
         }
-        Console.ReadKey();
 
+        Console.ReadKey();
     }
 }

@@ -6,7 +6,7 @@ namespace Ejercicios_semana_6
     {
         static void Main(string[] args)
         {
-            //Jannabel Ramos Ramirez   MAT. 2019-8510
+
         }
     }
 }
